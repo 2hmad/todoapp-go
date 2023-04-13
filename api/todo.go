@@ -1,4 +1,4 @@
-package todoRoutes
+package api
 
 import (
 	"github.com/gopulse/pulse"

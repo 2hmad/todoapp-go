@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"github.com/gopulse/pulse"
+	"github.com/todoapp-pulse/api"
 	"github.com/todoapp-pulse/migrations"
-	"github.com/todoapp-pulse/todoRoutes"
 )
 
 func main() {
@@ -18,8 +18,8 @@ func main() {
 		return nil
 	})
 
-	// Todo routes
-	todoRoutes.TodoRoute(router)
+	// Todo api
+	api.TodoRoute(router)
 
 	router.Use("GET", pulse.CORSMiddleware())
 
